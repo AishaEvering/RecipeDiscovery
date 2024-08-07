@@ -42,29 +42,33 @@ strong performance in practice. I started by splitting the data into 80% trainin
       It was insightful to observe feature importance. For the Logistic Regression model, the most significant feature was the category, which was expected. In contrast, 
       the Random Forest model prioritized recipe details such as protein, calories, and sugar. The effectiveness of each model will be evaluated in the next step, Model Evaluation.
     </p>
-6. **Importance of Data Augmentation:** Although exploratory data analysis (EDA) was limited for the convolutional neural networks (CNNs), augmenting and flipping images proved effective in improving accuracy.
+6. ${{\color{teal}\Huge{\textsf{Model\ Evaluation\ \}}}}\$: Based on the results and the business requirement of "Correctly predict high traffic
+recipes 80% of the time," the best-performing model is the Comparison Model (Random Forest Classifier).
+
+   - Baseline Model (Logistic Regression) Results:
+      - **Precision for High Traffic (0.85):** Of the recipes predicted as high traffic, 85% were indeed high traffic.
+      - **Recall for High Traffic (0.77): 77%** of the actual high traffic recipes were correctly identified.
+      - **F1-Score for High Traffic (0.81):** This score provides a balance between precision and recall.
+        
+   - Comparison Model (Random Forest Classifier) Results:
+      - **Precision for High Traffic (0.82):** Of the recipes predicted as high traffic, 82% were indeed high traffic.
+      - **Recall for High Traffic (0.80):** 80% of the actual high traffic recipes were correctly identified.
+      - **F1-Score for High Traffic (0.81):** This score provides a balance between precision and recall.
 
 ## 🔑 Key Takeaways
 
-* CNN vs Transfer Learning: In this particular case, a basic CNN model outperformed transfer learning approaches. This highlights that, while advanced techniques like transfer learning can be beneficial, simpler models can sometimes yield better results depending on the context.
-
+* **Data Cleaning:** Ensuring clean data is crucial; as the saying goes, "*Garbage in, garbage out.*"
+* **Data Understanding and Normalization:** After cleaning, understanding the data distribution and normalizing it is essential.
+* **Preventing Data Leakage:** Always split the data before applying transformations to avoid data leakage.
+* **Random Forest Models:** I have consistently achieved good results with Random Forest models (both Regression and Classification). A Random Forest is an ensemble of decision trees. While individual decision trees are simple and interpretable, they can overfit. Random Forests address this by training multiple decision trees on random subsets of features, which helps prevent overfitting and improves model performance.
 
 ### 😤 Challenges Faced
 
-* **Ineffective Transfer Learning with EfficientNet**: I encountered difficulties using the EfficientNet model for transfer learning, as it did not produce satisfactory results. This experience underscored the complexity and challenges of selecting and tuning pre-trained models for specific tasks.
+Oh, the pressure! I’m comfortable with data cleaning, processing, and model training, but this project carried a lot of weight. After working so long to get to this point, I was finally facing the final submission. I meticulously reviewed the notebook multiple times, knowing how particular DataCamp is about their requirements. Plus, there was the added pressure of a time limit 😰. But I did it! I’m now moving on to more complex model architectures, but for this moment, I’m celebrating this accomplishment with a 🥳.
 
-### ☑️ Next Steps
+### ☑️ DataCamp Portfilio
 
-* **Present Findings:** Share detailed insights and results from this project.
-* **Certification:** Obtain my MIT Applied Data Science Certificate to further validate and enhance my expertise.
-  
-### 📖 Dataset Details
-
-* **Training Data:** 15,109 images
-* **Testing Data:** 128 images
-* **Validation Data:** 4,977 images
-* **Location:** All data is available on my Google Drive.
-
+If you'd like to see more of the projects I've completed on DataCamp, feel free to check out my (Datacamp Porfolio)[https://www.datacamp.com/portfolio/shovon3000g]. 
   
 ## Author
 
