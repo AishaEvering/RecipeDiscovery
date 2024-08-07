@@ -68,7 +68,7 @@ Oh, the pressure! I’m comfortable with data cleaning, processing, and model tr
 
 ### ☑️ DataCamp Portfilio
 
-If you'd like to see more of the projects I've completed on DataCamp, feel free to check out my (Datacamp Porfolio)[https://www.datacamp.com/portfolio/shovon3000g]. 
+If you'd like to see more of the projects I've completed on DataCamp, feel free to check out my [Datacamp Porfolio](https://www.datacamp.com/portfolio/shovon3000g). 
   
 ## Author
 
